@@ -1,0 +1,90 @@
+* {
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.background {
+  background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    /* background: url('background-image.jpg') no-repeat center center fixed; */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.terminal {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 70%;
+    max-width: 800px;
+    height: 50%;
+    max-height: 400px;
+    padding: 10px;
+    padding-top: 40px;
+    overflow-y: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+
+.window-header {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 30px;
+  width: calc(100% - 20px);
+  background: #212121;
+  border-bottom: 2px solid black;
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 10px;
+}
+
+.title {
+  font-family: sans-serif;
+}
+
+.icon-wrapper {
+  user-select: none;
+}
+
+#output {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+    white-space: pre-line;
+}
+.username {
+  color: #1abc9c;
+}
+
+.input-line {
+    display: flex;
+    align-items: center;
+}
+
+.prompt {
+  margin-right: 5px;
+  color: #1abc9c;
+}
+
+#commandInput {
+    flex: 1;
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    font-size: 1em;
+}
