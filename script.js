@@ -7,9 +7,9 @@ const commands = [
         }
     },
     {
-        name: "greet",
+        name: "root",
         description: "Greets the user",
-        action: () => "Hello! How can I assist you today?"
+        action: () => "Amaran! Anda telah memasuki bahagian kakitangan, jika anda bukan kakitangan, sila taip CLEAR untuk hapuskan aktiviti"
     },
     {
         name: "clear",
